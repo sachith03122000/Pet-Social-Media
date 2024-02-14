@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pets Social Media</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pets Social Media</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="profile-section">
+      <h2>Create Profile</h2>
+      <form id="profile-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" required></textarea>
+        <label for="profile-pic">Profile Picture:</label>
+        <input type="file" id="profile-pic" required accept="image/*">
+        <button type="submit">Create Profile</button>
+      </form>
+    </section>
+
+    <section id="post-section">
+      <h2>Create Post</h2>
+      <form id="post-form">
+        <label for="post">Post:</label>
+        <textarea id="post" required></textarea>
+        <label for="post-image">Upload Image:</label>
+        <input type="file" id="post-image" accept="image/*">
+        <button type="submit">Create Post</button>
+      </form>
+    </section>
+
+    <section id="feed-section">
+      <h2>Feed</h2>
+      <div id="feed"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
